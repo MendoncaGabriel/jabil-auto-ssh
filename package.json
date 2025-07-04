@@ -1,17 +1,11 @@
 {
-  "dependencies": {
-    "dotenv": "^17.0.1",
-    "ssh2": "^1.16.0",
-    "zod": "^3.25.73"
-  },
   "name": "jabil-auto-ssh",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "build": "tsup"
-},
-
+  "scripts": {
+    "build": "tsup"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MendoncaGabriel/jabil-auto-ssh.git"
@@ -24,6 +18,11 @@
     "url": "https://github.com/MendoncaGabriel/jabil-auto-ssh/issues"
   },
   "homepage": "https://github.com/MendoncaGabriel/jabil-auto-ssh#readme",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "ssh2": "^1.16.0",
+    "zod": "^3.25.73"
+  },
   "devDependencies": {
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
