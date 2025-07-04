@@ -1,10 +1,10 @@
-## 🚀 Bem-vindo ao **Jabil SSH Server**
+## 🚀 Jabil SSH Server
 
-Este projeto conecta automaticamente a um servidor via SSH e executa comandos personalizados ao iniciar a sessão.
+Este projeto conecta automaticamente a um servidor via **SSH** e executa comandos personalizados assim que a conexão é estabelecida.
 
 ---
 
-### 📦 Instalação
+### 📥 Instalação
 
 1. **Instale as dependências:**
 
@@ -12,39 +12,43 @@ Este projeto conecta automaticamente a um servidor via SSH e executa comandos pe
    npm install
    ```
 
-3. **Crie o arquivo `.env`:**
+2. **Compile o projeto:**
 
-   Baseie-se no arquivo `.env.example`:
+   ```bash
+   npm run build
+   ```
+
+3. **Configure o ambiente:**
+
+   Copie o arquivo `.env.example` e preencha com seus dados de conexão:
 
    ```bash
    cp .env.example .env
    ```
 
-   Preencha com suas credenciais SSH.
+---
+
+### ⚙️ Como usar
+
+Para facilitar, crie um atalho na área de trabalho:
+
+1. Vá até o arquivo `server-ss.bat` na raiz do projeto.
+2. Clique com o botão direito → **Enviar para** → **Área de trabalho (criar atalho)**.
+3. Para iniciar a conexão, **clique duas vezes no atalho**.
 
 ---
 
-### ⚙️ Configuração Rápida
+### ✅ Funcionalidades
 
-Crie um atalho do arquivo `server-ss.bat` na sua área de trabalho:
-
-1. Localize o arquivo `server-ss.bat` na pasta raiz do projeto.
-2. Clique com o botão direito > **Enviar para** > **Área de Trabalho (criar atalho)**.
-
-Sempre que você quiser iniciar a sessão SSH automaticamente, **basta dar duplo clique nesse atalho**.
-
----
-
-### ✅ O que esse projeto faz:
-
-* Conecta a um servidor remoto via SSH.
-* Executa comandos automáticos ao iniciar a sessão (`cd`, `sudo`, etc).
-* Abre um terminal interativo onde você pode digitar novos comandos.
-* Entra direto na diretorio `opt/`
+* Conecta automaticamente a um servidor remoto via SSH.
+* Executa comandos assim que a sessão começa (ex: `cd`, `sudo`, etc).
+* Inicia no diretório `/opt`.
+* Abre um terminal interativo para você digitar comandos.
+* Interface simples, rápida e direta no terminal.
 
 ---
 
-### 🛠️ Requisitos
+### 🧰 Requisitos
 
-* Node.js instalado.
-* Permissão de acesso ao servidor SSH.
+* **Node.js** instalado no computador.
+* Permissões de acesso ao servidor SSH.

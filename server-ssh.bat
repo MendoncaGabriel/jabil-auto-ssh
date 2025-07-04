@@ -11,6 +11,6 @@ echo Iniciando aplicação com suporte a UTF-8...
 echo Use Windows Terminal com fonte compatível como Cascadia Code PL ou Fira Code.
 echo.
 
-node index.mjs
+node dist/index.mjs
 
 pause > nul
